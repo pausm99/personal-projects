@@ -45,5 +45,5 @@ I want to get deeper into CSS Flexbox and in the future, learn preprocessed CSS 
 
 ## Author
 
-- Nickname - [leroy]
+- Nickname - leroy
 - Frontend Mentor - [@pausm99](https://www.frontendmentor.io/profile/pausm99)
