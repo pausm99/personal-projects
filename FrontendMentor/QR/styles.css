@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+:root {
+    --white: hsl(0, 0%, 100%);
+    --light-gray: hsl(212, 45%, 89%);
+    --grayishblue: hsl(220, 15%, 55%);
+    --dark-blue: hsl(218, 44%, 22%);
+    --blue: rgb(68, 123, 248);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Outfit';
+    background-color: var(--light-gray);
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+.page-wrapper {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100vh;
+    position: relative;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    padding: 1em;
+    border-radius: 20px;
+    padding-bottom: 25px;
+}
+
+img {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.page-wrapper * {
+    text-align: center;
+}
+
+main > :not(img) {
+    max-width: 250px;
+    width: 90%;
+    margin: 10px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--dark-blue);
+}
+
+p {
+    font-weight: 400;
+    color: var(--grayishblue);
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+}
+
+@media screen and (max-width: 1050px) and (orientation: landscape) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        max-height: 70vh;
+        flex-direction: row;
+        padding-bottom: initial;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    img {
+        max-height: 90%;
+        width: auto;
+    }
+
+    .text {
+        margin: 15px;
+    }
+}
+
+
+@media screen and (max-width: 800px) and (orientation: landscape) {
+    body {
+        height: 100vh;
+    }
+
+    main {
+        max-height: 70vh;
+        flex-direction: row;
+        padding-bottom: initial;
+        padding: 15px;
+        gap: 10px;
+    }
+
+    img {
+        max-height: 90%;
+        width: auto;
+    }
+
+    .text {
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    img {
+        max-width: 250px;
+    }
+
+    main > :not(img) {
+        max-width: 200px;
+    }
+
+    footer {
+        max-width: 350px;
+        padding: 5px;
+        font-size: 0.8rem;
+        bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+
+    body {
+        min-width: 230px;
+    }
+
+    .page-wrapper {
+        padding: 10px;
+        min-width: 280px
+    }
+
+    footer {
+        max-width: 350px;
+        padding: 5px;
+        font-size: 0.8rem;
+        bottom: 5px;
+    }
+}
+
