@@ -2,11 +2,384 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="height=device-height, 
+                      width=device-width, initial-scale=1.0, 
+                      minimum-scale=1.0, maximum-scale=1.0, 
+                      user-scalable=no, target-densitydpi=device-dpi">
     <link rel="stylesheet" href="styles.css">
-    <title>Starbucks Rewards</title>
+    <title>Starbucks® Rewards</title>
+    <script src="https://kit.fontawesome.com/17458d9006.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="main.js"></script>
 </head>
 <body>
-    
+    <nav class="navbar">
+        <div class="logo">
+            <img class="logo-img" src="images/Starbucks-Logo.png" alt="Starbucks logo">
+        </div>
+        <div class="menu-button" id="menu-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="general-width desktop" id="navbar-menu-desktop">
+            <div class="menu-section">
+                <ul class="nav-pages">
+                    <li class="nav-link"><a>Menu</a></li>
+                    <li class="nav-link"><a>Rewards</a></li>
+                    <li class="nav-link"><a>Gift cards</a></li>
+                </ul>
+            </div>
+            <div class="menu-section user-section">
+                <a href="#" class="store-finder">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Find a store</p>
+                </a>
+                <button type="button" class="user-button" id="sign-in">Sign in</button>
+                <button type="button" class="user-button" id="join-now-1">Join now</button>
+            </div>
+        </div> 
+    </nav>
+    <nav class="mobile" id="navbar-menu-mobile">
+        <div id="navbar-menu-mobile-wrapper">
+            <div class="menu-section">
+                <ul class="nav-pages">
+                    <li class="nav-link"><a>Menu</a></li>
+                    <li class="nav-link"><a>Rewards</a></li>
+                    <li class="nav-link"><a>Gift cards</a></li>
+                </ul>
+            </div>
+            <hr id="menu-divider">
+            <div class="menu-section user-section">
+                <div id="user-buton-wrapper">
+                    <button type="button" class="user-button" id="sign-in">Sign in</button>
+                    <button type="button" class="user-button" id="join-now-1">Join now</button>
+                </div>
+                <a href="#" class="store-finder">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Find a store</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <div class="page-header sticky" id="page-header">
+        <div class="page-header-text general-width">
+            <h2>Starbucks® Rewards</h2>
+            <button type="button" class="user-button" id="header-join-button">Join in the app</button>
+        </div>
+    </div>
+    <main>
+        <div class="section-wrapper" id="join-wrapper">
+            <section class="main-section general-width" id="join">
+                <h1 class="free-coffee-header">Free coffee is a tap away</h1>
+                <h4 class="free-coffee-text">Join now to start earning Rewards</h4>
+                <button type="button" class="user-button" id="join-now-2">Join now</button>
+                <button type="button" class="user-button" id="join-now-app">Join in the app</button>
+                <p class="join-app" id="join-app-1">Or <a>join in the app</a> for the best experience</p>
+                <p class="join-app" id="join-app-2"><a>Or join online</a></p>
+            </section>
+        </div>
+        <div class="section-wrapper" id="get-start-wrapper">
+            <section class="main-section general-width" id="get-start">
+                <div class="main-section-header">
+                    <h3 class="section-title">Getting started is easy</h3>
+                    <p class="section-text">Earn Stars and get rewarded in a few easy steps.</p>
+                </div>
+                <ul class="trio-list start-steps">
+                    <li class="step trio-list-item">
+                        <img class="number-image" src="images/getting-started-1@2x.webp" alt="">
+                        <div class="trio-list-text">
+                            <h3 class="list-item-header step-title">Create an account</h3>
+                            <p class="list-item-text desktop step-text">
+                                To get started, <a class="text-link">join now</a>. You can also <a href="#" class="text-link">join in the app</a> to get access to the full range of Starbucks® Rewards benefits.
+                            </p>
+                            <p class="list-item-text mobile step-text">
+                                <a class="text-link">Join in the app</a> to get access to de full range of Starbucks&copy; Rewards benefits. You can also <a href="#" class="text-link">join online</a>.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="step trio-list-item">
+                        <img class="number-image" src="images/getting-started-2@2x.webp" alt="">
+                        <div class="trio-list-text">
+                            <h3 class="list-item-header step-title">Order and pay how you'd like</h3>
+                            <p class="list-item-text step-text">
+                                Use cash, credit/debit card or save some time and pay right through the app. You’ll collect Stars all ways. <a class="text-link">Learn how</a>
+                            </p>
+                        </div>
+                    </li>
+                    <li class="step trio-list-item">
+                        <img class="number-image" src="images/getting-started-3@2x.webp" alt="">
+                        <div class="trio-list-text">
+                            <h3 class="list-item-header step-title">Earn Stars, get Rewards</h3>
+                            <p class="list-item-text step-text">
+                                As you earn Stars, you can redeem them for Rewards—like free food, drinks, and more. Start redeeming with as little as 25 Stars!
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="section-wrapper" id="stars-wrapper">
+            <section class="main-section" id="stars">
+                <h3 class="section-title">Get your favorites for free</h3>
+                <div class="favorites-menu">
+                    <ul class="stars-selector general-width" id="stars-selector">
+                        <li class="star selected-star">
+                            <span class="star-number">25</span>
+                            <i class="fa-solid fa-star" style="color: #c79653;"></i>
+                        </li>
+                        <li class="star">
+                            <span class="star-number">100</span>
+                            <i class="fa-solid fa-star" style="color: #c79653;"></i>
+                        </li>
+                        <li class="star">
+                            <span class="star-number">200</span>
+                            <i class="fa-solid fa-star" style="color: #c79653;"></i>                    
+                        </li>
+                        <li class="star">
+                            <span class="star-number">300</span>
+                            <i class="fa-solid fa-star" style="color: #c79653;"></i>                            
+                        </li>
+                        <li class="star">
+                            <span class="star-number">400</span>
+                            <i class="fa-solid fa-star" style="color: #c79653;"></i>
+                        </li>
+                    </ul>
+                    <ul class="drinks-selector">
+                        <li class="drink active general-width">
+                            <img src="images/025.webp" alt="Reward image" class="drink-image">
+                            <div class="drink-text">
+                                <h3 class="drink-title">Customize your drink</h3>
+                                <p class="drink-paragraph">Make your drink just right with an extra espresso shot, nondairy milk or a dash of your favorite syrup.</p>
+                            </div>
+                        </li>
+                        <li class="drink inactive general-width">
+                            <img src="images/100.webp" alt="Reward image" class="drink-image">
+                            <div class="drink-text">
+                                <h3 class="drink-title">Brewed hot or iced coffee or tea, bakery item, packaged snack and more</h3>
+                                <p class="drink-paragraph">Treat yourself to an iced coffee, buttery croissant, bag of chips and more.</p>
+                            </div>
+                        </li>
+                        <li class="drink inactive general-width">
+                            <img src="images/200.webp" alt="Reward image" class="drink-image">
+                            <div class="drink-text">
+                                <h3 class="drink-title">Handcrafted drink (Cold Brew, lattes and more) or hot breakfast</h3>
+                                <p class="drink-paragraph">Turn good mornings great with a delicious handcrafted drink of your choice, breakfast sandwich or oatmeal on us.</p>
+                            </div>
+                        </li>
+                        <li class="drink inactive general-width">
+                            <img src="images/300.webp" alt="Reward image" class="drink-image">
+                            <div class="drink-text">
+                                <h3 class="drink-title">Sandwich, protein box or at-home coffee</h3>
+                                <p class="drink-paragraph">Enjoy a PM pick-me-up with a lunch sandwich, protein box or a bag of coffee—including Starbucks VIA Instant®.</p>
+                            </div>
+                        </li>
+                        <li class="drink inactive general-width">
+                            <img src="images/400.webp" alt="Reward image" class="drink-image">
+                            <div class="drink-text">
+                                <h3 class="drink-title">Select Starbucks® merchandise</h3>
+                                <p class="drink-paragraph">Take home a signature cup, drink tumbler or your choice of coffee merch up to $20.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <div class="section-wrapper" id="extras-wrapper">
+            <section class="main-section general-width" id="extras">
+                <div class="main-section-header">
+                    <h3 class="section-title">Endless Extras</h3>
+                    <p class="section-text">Joining Starbucks® Rewards means unlocking access to exclusive benefits. Say hello to easy ordering, tasty Rewards and—yes, free coffee.</p>
+                </div>
+                <ul class="trio-list extras-list">
+                    <li class="extra-item trio-list-item">
+                        <img class="extras-image" src="images/1-fun-freebies.webp" alt="Drink & appetizer">
+                        <div class="trio-list-text">
+                            <h3 class="list-item-header step-title">Fun freebies</h3>
+                            <p class="list-item-text step-text">Not only can you earn free coffee, look forward to a birthday treat plus coffee and tea refills.</p>
+                            <a class="text-link">Learn more</a>
+                        </div>
+                    </li>
+                    <li class="extra-item trio-list-item">
+                        <img class="extras-image" src="images/2-order-and-pay-ahead.webp" alt="Drink & appetizer">
+                        <div class="trio-list-text">
+                            <h3 class="list-item-header step-title">Order & pay ahead</h3>
+                            <p class="list-item-text step-text">Enjoy the convenience of in-store, curbside or drive-thru pickup at select stores.</p>
+                            <a class="text-link">Learn more</a>
+                        </div>
+                    </li>
+                    <li class="extra-item trio-list-item">
+                        <img class="extras-image" src="images/3-get-to-free-faster.webp" alt="Drink & appetizer">
+                        <div class="trio-list-text">
+                            <h3 class="list-item-header step-title">Get to free faster</h3>
+                            <p class="list-item-text step-text">Earn Stars even quicker with Bonus Star challenges, Double Star Days and exciting games.</p>
+                            <a class="text-link">Learn more</a>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="section-wrapper" id="cash-card-wrapper">
+            <section class="main-section general-width" id="cash-card">
+                <h3 class="section-title">Cash or card, you earn Stars</h3>
+                <p class="section-text">No matter how you pay, you can earn Stars with your morning coffee. Those Stars add up to (really delicious) Rewards.</p>
+                <div class="stars-earnings">
+                    <div class="earning-method">
+                        <div class="star-per-dollar">
+                            <h3 class="star-per-dollar-header">1<span>&starf;</span> per dollar</h3>
+                            <p class="section-text">Pay as you go</p>
+                        </div>
+                        <div class="image-and-text">
+                            <img src="images/1A.png" alt="Payment method" class="payment-image">
+                            <div class="header-and-p">
+                                <h5 class="payment-header">Scan and pay separately</h5>
+                                <p class="section-text">Use cash or credit/debit card at the register.</p>
+                            </div>
+                        </div><div class="image-and-text">
+                            <img src="images/1B.webp" alt="Payment method" class="payment-image">
+                            <div class="header-and-p">
+                                <h5 class="payment-header">Save payment in the app</h5>
+                                <p class="section-text">Check-out faster by saving a credit/debit card or PayPal to your account. You’ll be able to order ahead or scan and pay at the register in one step.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="earning-method">
+                        <div class="star-per-dollar">
+                            <h3 class="star-per-dollar-header">2<span>&starf;</span> per dollar</h3>
+                            <p class="section-text">Add funds in the app</p>
+                        </div>
+                        <div class="image-and-text">
+                            <img src="images/2A.png" alt="Payment method" class="payment-image">
+                            <div class="header-and-p">
+                                <h5 class="payment-header">Preload</h5>
+                                <p class="section-text">To save time and earn Stars twice as fast, add money to your digital Starbucks Card using any payment option. Scan and pay in one step or order ahead in the app.</p>
+                            </div>
+                        </div><div class="image-and-text">
+                            <img src="images/2B.webp" alt="Payment method" class="payment-image">
+                            <div class="header-and-p">
+                                <h5 class="payment-header">Register your gift card</h5>
+                                <p class="section-text">Then use it to pay through the app. You can even consolidate balances from multiple cards in one place.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="section-wrapper" id="questions-wrapper">
+            <section class="main-section" id="questions">
+                <div class="main-section-header">
+                    <h3 class="section-title">Questions?</h3>
+                    <p class="section-text">We want to help in any way we can. You can ask your barista anytime or we’ve answered the most commonly asked questions <span class="text-link">right over here</span>.</p>
+                </div>
+            </section>
+        </div>
+        <footer class="section-wrapper" id="footer">
+            <nav class="footer-section general-width">
+                <div id="footer-links">
+                    <div class="footer-link-column">
+                        <div class="link-menu-wrap">
+                            <h4 class="link-title">About us</h4>
+                            <button class="link-title-arrow mobile">
+                                <i class="fa-solid fa-circle-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="expandable">
+                            <ul class="link-column">
+                                <li class="link-row">Our company</li>
+                                <li class="link-row">Our coffee</li>
+                                <li class="link-row">Stories and News</li>
+                                <li class="link-row">Starbucks Archive</li>
+                                <li class="link-row">Investor Service</li>
+                                <li class="link-row">Customer Service</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-link-column">
+                        <div class="link-menu-wrap">
+                            <h4 class="link-title">Careers</h4>
+                            <button class="link-title-arrow mobile">
+                                <i class="fa-solid fa-circle-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="expandable">
+                            <ul class="link-column">
+                                <li class="link-row">Culture and Values</li>
+                                <li class="link-row">Inclusion, Diversity, and Equity</li>
+                                <li class="link-row">Collage Achievement Plan</li>
+                                <li class="link-row">Alumni Community</li>
+                                <li class="link-row">U.S. Careers</li>
+                                <li class="link-row">International Careers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-link-column">
+                        <div class="link-menu-wrap">
+                            <h4 class="link-title">Social Impact</h4>
+                            <button class="link-title-arrow mobile">
+                                <i class="fa-solid fa-circle-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="expandable">
+                            <ul class="link-column">
+                                <li class="link-row">People</li>
+                                <li class="link-row">Planet</li>
+                                <li class="link-row">Environmental and Social Impact Reporting</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-link-column">
+                        <div class="link-menu-wrap">
+                            <h4 class="link-title">For Business Partners</h4>
+                            <button class="link-title-arrow mobile">
+                                <i class="fa-solid fa-circle-chevron-down"></i>
+                            </button>
+                        </div>
+                        <div class="expandable">
+                            <ul class="link-column">
+                                <li class="link-row">Landlord Support Center</li>
+                                <li class="link-row">Suppliers</li>
+                                <li class="link-row">Corporate Gift Card Sales</li>
+                                <li class="link-row">Office and Foodservice Coffee</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-link-column">
+                        <div class="link-menu-wrap">
+                            <h4 class="link-title">Order and Pickup</h4>
+                            <button class="link-title-arrow mobile">
+                                <i class="fa-solid fa-circle-chevron-down"></i>
+                            </button>
+                            </div>
+                        <div class="expandable">
+                            <ul class="link-column">
+                                <li class="link-row">Order on the App</li>
+                                <li class="link-row">Order on the Web</li>
+                                <li class="link-row">Delivery</li>
+                                <li class="link-row">Order and Pickup Options</li>
+                                <li class="link-row">Explore and Find Coffee for Home</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div id="social">
+                    <i class="social-logo fa-brands fa-spotify"></i>
+                    <i class="social-logo fa-brands fa-facebook"></i>
+                    <i class="social-logo fa-brands fa-pinterest"></i>
+                    <i class="social-logo fa-brands fa-instagram"></i>
+                    <i class="social-logo fa-brands fa-youtube"></i>
+                    <i class="social-logo fa-brands fa-twitter"></i>
+                </div>
+                <ul id="privacy">
+                    <li class="privacy-link">Privacy Note</li>
+                    <li class="privacy-link">Terms of Use</li>
+                    <li class="privacy-link">Do Not Share My Personal Information</li>
+                    <li class="privacy-link">CA Supply Chain Act</li>
+                    <li class="privacy-link">Cookie Preferences</li>
+                </ul>
+                <p id="copyright">© 2023 Starbucks Coffee Company. All rights reserved.</p>
+            </nav>
+        </footer>
+    </main>
 </body>
 </html>
