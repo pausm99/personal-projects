@@ -27,7 +27,7 @@ Users should be able to:
 ### Screenshots
 Desktop screenshot
 
-![](./assets/images/Captura1.png)
+![](./assets/images/Captura3.png)
 
 Mobile screenshot
 
@@ -35,7 +35,7 @@ Mobile screenshot
 
 Mobile screenshot (landscape)
 
-![](./assets/images/Captura3.png)
+![](./assets/images/Captura2.png)
 
 
 ### Links
