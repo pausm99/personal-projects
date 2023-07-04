@@ -26,12 +26,15 @@ Users should be able to:
 
 ### Screenshots
 Desktop screenshot
+
 ![](./assets/images/Captura1.png)
 
 Mobile screenshot
+
 ![](./assets/images/Captura2.png)
 
 Mobile screenshot (landscape)
+
 ![](./assets/images/Captura3.png)
 
 
