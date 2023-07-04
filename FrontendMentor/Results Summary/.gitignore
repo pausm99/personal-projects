@@ -1,0 +1,19 @@
+# Ignore Mac system files 
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore files related to API keys
+.env
+
+#Ignore files related to Firebase
+.firebase
+.firebaserc
+firebase.*
+
+#Fonts
+fonts
+
+#Design folder
+design
